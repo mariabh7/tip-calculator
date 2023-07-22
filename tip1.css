@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --main-bg-color: hsl(185, 41%, 84%);
+    --price-color: hsl(185, 41%, 84%);
+    --color-dark: hsl(183, 100%, 15%);
+    --text-color: hsl(186, 14%, 43%);
+    --hover-color: hsl(172, 67%, 45%);
+    --inputs-bg-l: hsl(189, 41%, 97%);
+    --mono-font-: 'Space Mono', monospace;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+    font-family: 'Space Mono', monospace;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    align-self: center;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    font-weight: normal;
+}
+
+.sec-2 {
+    width: 900px;
+
+}
+
+.title-h {
+    margin: 2rem 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 2rem;
+}
+
+/* user info part start here */
+.user-in {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    justify-content: flex-start;
+}
+
+h4 {
+    margin: 5px 0;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+.in-p {
+    outline: none;
+    border: 1px solid var(--inputs-bg-l);
+    background-color: var(--inputs-bg-l);
+    direction: rtl;
+    width: 95%;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    color: var(--color-dark);
+    font-size: 20px;
+    padding: 6px 10px;
+}
+
+.in-p::placeholder {
+    font-weight: 400;
+    color: hsl(185, 41%, 84%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.rel-s {
+    position: relative;
+}
+
+svg {
+    position: absolute;
+    left: 10px;
+    bottom: 14px;
+}
+
+.tip-wrap {
+    margin: 1rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    justify-content: space-between;
+    column-gap: 1rem;
+}
+
+.tip {
+    cursor: pointer;
+    padding: 10px;
+    width: 30%;
+    font-size: 1.3rem;
+    border: 1px solid var(--color-dark);
+    border-radius: 5px;
+    font-family: var(--mono-font-);
+    color: white;
+    background-color: var(--color-dark);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.tip:hover {
+    border: 1px solid var(--hover-color);
+    background-color: var(--hover-color);
+}
+
+.your-tip {
+    direction: rtl;
+    font-family: var(--mono-font-);
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--color-dark);
+    width: 28%;
+    border: 1px solid var(--inputs-bg-l);
+    background-color: var(--inputs-bg-l);
+    border-radius: 5px;
+    outline: none;
+}
+
+.your-tip::placeholder {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding: 0 10px;
+    color: var(--price-color);
+}
+
+/* output section code */
+.my-ou {
+    padding: 1rem 1.5rem;
+    background-color: var(--color-dark);
+    border: 1px solid var(--color-dark);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.s-m {
+    margin: 1rem 0 3rem;
+    display: flex;
+    column-gap: 2rem;
+    justify-content: space-between;
+}
+
+h5 {
+    text-transform: capitalize;
+    color: white;
+    margin: 0 0 5px;
+    font-size: 1.3rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: var(--hover-color);
+}
+
+.perso {
+    color: var(--price-color);
+    font-size: 16px;
+}
+
+.reset-b {
+    padding: 80px 0 0;
+
+}
+
+.res-b {
+    margin: 10px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border: 1px solid var(--hover-color);
+    background-color: var(--hover-color);
+    border-radius: 10px;
+    color: var(--color-dark);
+    padding: 10px;
+    align-self: flex-end;
+    width: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.tip-active {
+    border: 1px solid var(--hover-color);
+    background-color: var(--hover-color);
+}
+
+.cs-n {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:1023px) {
+
+    h1 {
+        align-self: center;
+        color: var(--text-color);
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        letter-spacing: 10px;
+        font-weight: normal;
+    }
+
+    .sec-2 {
+        width: 95%;
+
+    }
+
+    .title-h {
+        margin: 1rem 0;
+    }
+
+    .container {
+        display: block;
+        padding: 1rem;
+    }
+
+    /* user info part start here */
+    .user-in {
+
+        row-gap: 2rem;
+
+    }
+
+    .tip-wrap {
+        margin: 1rem 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+        justify-content: flex-start;
+        column-gap: 1rem;
+    }
+
+    .tip {
+        width: 45%;
+    }
+
+
+    .your-tip {
+        width: 44%;
+    }
+
+    /* output section code */
+    .my-ou {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .reset-b {
+        padding: 10px 0 0;
+
+    }
+
+    .res-b {
+        margin: 10px 0;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        border: 1px solid var(--hover-color);
+        background-color: var(--hover-color);
+        border-radius: 10px;
+        color: var(--color-dark);
+        padding: 10px;
+        align-self: flex-end;
+        width: 100%;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .tip-active {
+        border: 1px solid var(--hover-color);
+        background-color: var(--hover-color);
+    }
+}
